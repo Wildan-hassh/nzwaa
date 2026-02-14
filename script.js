@@ -1,9 +1,9 @@
 const images = [
-  { src: "IMG/1.jpg", text: "Tiap detik bersamamu adalah bagian favorit dalam hariku." },
+  { src: "IMG/1.jpg", text: "Tiap detik melihatmu adalah bagian favorit dalam hariku." },
   { src: "IMG/2.jpg", text: "Terima kasih sudah menjadi alasan di balik senyumku." },
   { src: "IMG/3.jpg", text: "Duniaku terasa jauh lebih indah sejak ada kamu." },
   { src: "IMG/4.jpg", text: "Mungkin aku bukan orang yang sempurna..." },
-  { src: "IMG/5.jpg", text: "Tapi cintaku padamu akan selalu tulus." },
+  { src: "IMG/5.jpg", text: "Tapi aku akan selalu tulus." },
   { src: "IMG/15.jpg", text: "Jangan pernah bosan ya, tetaplah jadi kamu." },
   { src: "IMG/14.jpg", text: "Satu hal yang pasti, aku sangat beruntung memilikimu." }
 ];
@@ -79,7 +79,7 @@ function showFinalSurprise() {
 function highlightText() {
   const overlay = document.getElementById("messageOverlay");
   const textElement = document.getElementById("typewriterText");
-  const fullText = "Terima kasih sudah menjadi bagian terindah dalam ceritaku.\n\nKamu adalah alasan di balik senyum yang tidak bisa kujelaskan, dan hadirmu membuat segalanya terasa jauh lebih berarti.\n\nAku sangat bersyukur memilikimu.\nSemoga kita selalu bersama, selamanya. ❤️";
+  const fullText = "Terima kasih sudah menjadi bagian terindah dalam ceritaku.\n\nKamu adalah alasan di balik senyum yang tidak bisa kujelaskan, dan hadirmu membuat segalanya terasa jauh lebih berwarna.\n\nAku sangat bersyukur memilikimu.\nSemoga kita selalu bersama, selamanya. ❤️";
   
   finalTrigger.style.display = "none";
   overlay.style.display = "flex";
@@ -123,3 +123,4 @@ function createLove(e) {
   setTimeout(() => love.remove(), 1200);
 
 }
+
