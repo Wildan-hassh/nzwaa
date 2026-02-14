@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap');
+
+body {
+  margin: 0; padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: #000;
+  overflow: hidden;
+}
+
+/* Background Dinamis (Anti Ruang Hitam Kosong) */
+.dynamic-bg {
+  position: fixed; inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px) brightness(0.5); /* Membuat latar belakang buram & gelap */
+  transform: scale(1.1); /* Menghilangkan garis putih di pinggir saat blur */
+  transition: background-image 1.2s ease-in-out;
+  z-index: -1;
+}
+
+.modal {
+  display: none; position: fixed; inset: 0;
+  z-index: 3000; align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.4); /* Overlay tipis di atas background blur */
+}
+
+/* Wrapper Foto agar Simetris */
+.photo-container {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  transition: opacity 1.5s ease;
+}
+
+.img-wrapper {
+  width: 85%; max-width: 400px;
+  max-height: 60vh;
+  display: flex; align-items: center; justify-content: center;
+}
+
+#modalImg {
+  max-width: 100%; max-height: 100%;
+  object-fit: contain; /* Foto asli tidak terpotong */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fade-in { opacity: 1 !important; }
+
+.caption-box {
+  width: 80%; max-width: 400px;
+  text-align: center; margin-top: 30px;
+  min-height: 80px;
+}
+
+.typewriter-caption {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem; color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+/* Sisa CSS lainnya (Intro, Snow, Message) tetap sama seperti sebelumnya */
+.intro-overlay { position: fixed; inset: 0; background: white; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 5000; transition: 1s; }
+.heart-btn { font-size: 80px; cursor: pointer; animation: pulse 1.5s infinite; }
+@keyframes pulse { 50% { transform: scale(1.1); } }
+.final-trigger { display: none; text-align: center; cursor: pointer; z-index: 4000; }
+.envelope-icon { font-size: 80px; filter: drop-shadow(0 0 15px #ff4d6d); animation: float 2s infinite ease-in-out; }
+@keyframes float { 50% { transform: translateY(-20px); } }
+.message-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 6000; align-items: center; justify-content: center; }
+.message-card { background: white; padding: 30px; border-radius: 20px; width: 80%; max-width: 350px; text-align: center; }
+.snowflake { position: absolute; color: white; animation: fall linear infinite; }
+@keyframes fall { to { transform: translateY(100vh); } }

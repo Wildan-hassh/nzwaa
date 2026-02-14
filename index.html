@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Untuk Seseorang yang Spesial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="createLove(event)">
+
+  <div class="intro-overlay" id="introOverlay" onclick="startApp(event)">
+    <div class="heart-btn">❤️</div>
+    <p class="intro-text">Sentuh Hati Ini</p>
+  </div>
+
+  <audio id="myAudio" loop>
+    <source src="Blue-Yung-Kai.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="modal" id="modal">
+    <div id="dynamicBg" class="dynamic-bg"></div>
+    
+    <div class="photo-container" id="photoContainer">
+      <div class="img-wrapper">
+        <img id="modalImg">
+      </div>
+      <div class="caption-box">
+        <div id="typewriterCaption" class="typewriter-caption"></div>
+      </div>
+    </div>
+
+    <div id="finalTrigger" class="final-trigger" onclick="highlightText()">
+      <div class="envelope-icon">📩</div>
+      <p>Sentuh untuk pesan terakhir...</p>
+    </div>
+  </div>
+
+  <div class="message-overlay" id="messageOverlay">
+    <div id="snow-container"></div>
+    <div class="message-card">
+      <span class="close-msg" onclick="closeMessage()">×</span>
+      <div id="typewriterText" class="typewriter-text"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
