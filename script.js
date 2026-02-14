@@ -1,11 +1,11 @@
 const images = [
-  { src: "img/1.jpg", text: "Tiap detik bersamamu adalah bagian favorit dalam hariku." },
-  { src: "img/2.jpg", text: "Terima kasih sudah menjadi alasan di balik senyumku." },
-  { src: "img/3.jpg", text: "Duniaku terasa jauh lebih indah sejak ada kamu." },
-  { src: "img/4.jpg", text: "Mungkin aku bukan orang yang sempurna..." },
-  { src: "img/5.jpg", text: "Tapi cintaku padamu akan selalu tulus." },
-  { src: "img/15.jpg", text: "Jangan pernah bosan ya, tetaplah jadi kamu." },
-  { src: "img/14.jpg", text: "Satu hal yang pasti, aku sangat beruntung memilikimu." }
+  { src: "IMG/1.jpg", text: "Tiap detik bersamamu adalah bagian favorit dalam hariku." },
+  { src: "IMG/2.jpg", text: "Terima kasih sudah menjadi alasan di balik senyumku." },
+  { src: "IMG/3.jpg", text: "Duniaku terasa jauh lebih indah sejak ada kamu." },
+  { src: "IMG/4.jpg", text: "Mungkin aku bukan orang yang sempurna..." },
+  { src: "IMG/5.jpg", text: "Tapi cintaku padamu akan selalu tulus." },
+  { src: "IMG/15.jpg", text: "Jangan pernah bosan ya, tetaplah jadi kamu." },
+  { src: "IMG/14.jpg", text: "Satu hal yang pasti, aku sangat beruntung memilikimu." }
 ];
 
 let currentIndex = 0;
@@ -121,4 +121,5 @@ function createLove(e) {
   love.style.top = y + "px";
   document.body.appendChild(love);
   setTimeout(() => love.remove(), 1200);
+
 }
